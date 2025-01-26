@@ -4,7 +4,7 @@ class Expenses extends StatefulWidget {
   const Expenses({super.key});
 
   @override
-  State<StatefulWidget> createState() => _ExpensesState();
+  State<Expenses> createState() => _ExpensesState();
 
 
 }
@@ -13,6 +13,12 @@ class _ExpensesState extends State<Expenses> {
 
   @override
   Widget build(BuildContext context){
-    throw UnimplementedError();  
+    return Scaffold(body: Column(
+      children: const [
+        Text('The chart'),
+        Text('Expenses List'),
+      ],
+    ),
+    );
   }
 }
